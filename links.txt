@@ -21,4 +21,4 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master
 https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
 https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/Python/Python.yaml
 https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/Twitch/Twitch.yaml
-https://github.com/vstar37/sing-box-geosite/raw/main/Anaconda.yml
+https://github.com/vstar37/sing-box-geosite/raw/main/Anaconda.yaml
