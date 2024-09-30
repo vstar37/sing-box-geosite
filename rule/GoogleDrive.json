@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain": [
+        "drive.usercontent.google.com",
         "www.googleapis.com"
       ]
     },
