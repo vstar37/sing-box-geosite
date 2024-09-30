@@ -22,3 +22,5 @@ https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash
 https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/Python/Python.yaml
 https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/Twitch/Twitch.yaml
 https://github.com/vstar37/sing-box-geosite/raw/main/Anaconda.yaml
+https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/Nvidia/Nvidia.yaml
+https://github.com/blackmatrix7/ios_rule_script/raw/refs/heads/master/rule/Clash/Ubuntu/Ubuntu.yaml
