@@ -36,4 +36,5 @@ https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provide
 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
 
+https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
 
