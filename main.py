@@ -118,6 +118,11 @@ def parse_list_file(link, output_directory):
             dfs = [df for df, rules in results]   # 提取df的内容
             rules_list = [rules for df, rules in results]  # 提取逻辑规则rules的内容
             df = pd.concat(dfs, ignore_index=True)  # 拼接为一个DataFrame
+            
+        # 删除 pattern 中包含 IP-CIDR6 的行
+        df = df[~df['pattern'].str.contains('IP-CIDR6')].reset_index(drop=True)
+        
+        # 其他的过滤和转换操作
         df = df[~df['pattern'].str.contains('#')].reset_index(drop=True)  # 删除pattern中包含#号的行
         df = df[df['pattern'].isin(MAP_DICT.keys())].reset_index(drop=True)  # 删除不在字典中的pattern
         df = df.drop_duplicates().reset_index(drop=True)  # 删除重复行
@@ -130,12 +135,12 @@ def parse_list_file(link, output_directory):
             if pattern == 'domain_suffix':
                 rule_entry = {pattern: [address.strip() for address in addresses]}
                 result_rules["rules"].append(rule_entry)
-                # domain_entries.extend([address.strip() for address in addresses])  # 1.9以下的版本需要额外处理 domain_suffix
             elif pattern == 'domain':
                 domain_entries.extend([address.strip() for address in addresses])
             else:
                 rule_entry = {pattern: [address.strip() for address in addresses]}
                 result_rules["rules"].append(rule_entry)
+
         # 删除 'domain_entries' 中的重复值
         domain_entries = list(set(domain_entries))
         if domain_entries:
