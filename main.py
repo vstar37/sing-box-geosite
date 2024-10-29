@@ -16,7 +16,7 @@ if os.path.exists(log_file):
 logging.basicConfig(filename=log_file, level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-special_file_keyword = "https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt"
+special_file_keyword = "little-snitch-blocklist"
 MAP_DICT = {
     'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
     'DOMAIN-KEYWORD': 'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
@@ -124,7 +124,6 @@ def parse_special_file(link, output_directory):
     返回:
         None
     """
-    logging.info("检测到关键字特定链接！")
     try:
         response = requests.get(link)
         response.raise_for_status()  # 确保请求成功
@@ -173,7 +172,8 @@ def sort_dict(obj):
 
 def parse_list_file(link, output_directory):
     try:
-        if "special_file_keyword" in link:
+        if "special_file_keyword" in link
+            logging.info("检测到关键字特定链接！")
             return parse_special_file(link, output_directory)
 
         with concurrent.futures.ThreadPoolExecutor() as executor:
