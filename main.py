@@ -9,7 +9,11 @@ import ipaddress
 import logging
 
 # 配置日志记录
-logging.basicConfig(filename='log.txt', level=logging.INFO, 
+log_file = 'log.txt'
+if os.path.exists(log_file):
+    open(log_file, 'w').close()  # 清空旧的日志内容
+
+logging.basicConfig(filename=log_file, level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 special_file_keyword = "https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt"
@@ -116,6 +120,10 @@ def parse_special_file(link, output_directory):
         data = response.json()
         denied_domains = data.get("denied-remote-domains", [])
         
+        if not denied_domains:
+            logging.warning(f"从 {link} 未找到 'denied-remote-domains' 数据")
+            return None
+
         result_rules = {
             "version": 1,
             "rules": [{"domain": list(set(denied_domains))}]
@@ -131,7 +139,7 @@ def parse_special_file(link, output_directory):
         return file_name
 
     except Exception as e:
-        logging.error(f'处理特定链接 {link} 时出错，已跳过：{e}')
+        logging.error(f'处理特定链接 {link} 时出错：{e}')
         return None
 
 def sort_dict(obj):
@@ -189,7 +197,7 @@ def parse_list_file(link, output_directory):
         logging.info(f"成功处理链接 {link} 并生成 JSON 文件 {file_name}")
         return file_name
     except Exception as e:
-        logging.error(f'获取链接 {link} 出错，已跳过。错误：{e}')
+        logging.error(f'获取链接 {link} 出错：{e}')
         return None
 
 with open("../links.txt", 'r') as links_file:
