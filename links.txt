@@ -38,3 +38,5 @@ https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provide
 
 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
 
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+
