@@ -9,7 +9,7 @@ import ipaddress
 import logging
 
 # 配置日志记录
-logging.basicConfig(filename='log.txt', level=logging.ERROR, 
+logging.basicConfig(filename='log.txt', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 special_file_keyword = "https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt"
@@ -24,11 +24,13 @@ def read_yaml_from_url(url):
     response = requests.get(url)
     response.raise_for_status()
     yaml_data = yaml.safe_load(response.text)
+    logging.info(f"成功读取 YAML 数据 {url}")
     return yaml_data
 
 def read_list_from_url(url):
     try:
         df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other', 'other2', 'other3'])
+        logging.info(f"成功读取列表数据 {url}")
     except Exception as e:
         logging.error(f"读取 {url} 时出错：{e}")
         return pd.DataFrame(), []
@@ -104,6 +106,7 @@ def parse_and_convert_to_dataframe(link):
         logging.error(f"解析 {link} 时出错：{e}")
         return pd.DataFrame(), []
 
+    logging.info(f"成功解析链接 {link}")
     return df, rules
 
 def parse_special_file(link, output_directory):
@@ -124,13 +127,13 @@ def parse_special_file(link, output_directory):
 
         srs_path = file_name.replace(".json", ".srs")
         os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
+        logging.info(f"成功处理特定链接 {link}")
         return file_name
 
     except Exception as e:
         logging.error(f'处理特定链接 {link} 时出错，已跳过：{e}')
         return None
 
-# 对字典进行排序，含list of dict
 def sort_dict(obj):
     if isinstance(obj, dict):
         return {k: sort_dict(obj[k]) for k in sorted(obj)}
@@ -140,7 +143,6 @@ def sort_dict(obj):
         return sorted(sort_dict(x) for x in obj)
     else:
         return obj
-
 
 def parse_list_file(link, output_directory):
     try:
@@ -184,12 +186,12 @@ def parse_list_file(link, output_directory):
 
         srs_path = file_name.replace(".json", ".srs")
         os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
+        logging.info(f"成功处理链接 {link} 并生成 JSON 文件 {file_name}")
         return file_name
     except Exception as e:
         logging.error(f'获取链接 {link} 出错，已跳过。错误：{e}')
         return None
 
-# 读取 links.txt 并生成 JSON 文件
 with open("../links.txt", 'r') as links_file:
     links = links_file.read().splitlines()
 
