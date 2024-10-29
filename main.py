@@ -124,6 +124,21 @@ def sort_dict(obj):
     else:
         return obj
 
+def clean_json_data(data):
+    """
+    清洗 JSON 数据，移除末尾多余的逗号。
+
+    参数:
+        data (str): 原始 JSON 字符串。
+
+    返回:
+        str: 清洗后的 JSON 字符串。
+    """
+    # 移除末尾多余的逗号
+    cleaned_data = re.sub(r',\s*]', ']', data)  # 处理数组末尾的逗号
+    cleaned_data = re.sub(r',\s*}', '}', cleaned_data)  # 处理对象末尾的逗号
+    return cleaned_data
+
 def clean_denied_domains(domains):
     """
     清洗 denied-remote-domains 列表中的域名。
@@ -137,8 +152,6 @@ def clean_denied_domains(domains):
     cleaned_domains = []
     for domain in domains:
         domain = domain.strip()  # 去除前后空格
-        if domain and domain != '":' and domain[-1] == ',':
-            domain = domain[:-1]  # 去掉末尾的逗号
         if domain:  # 确保域名不为空
             cleaned_domains.append(domain)
     return cleaned_domains
@@ -158,8 +171,14 @@ def parse_littlesnitch_file(link, output_directory):
         response = requests.get(link)
         response.raise_for_status()  # 确保请求成功
         
-        # 假设返回的数据是 JSON 格式
-        data = response.json()
+        # 获取原始 JSON 字符串
+        raw_data = response.text
+        
+        # 清洗整个 JSON 数据
+        cleaned_raw_data = clean_json_data(raw_data)
+        
+        # 将清洗后的数据解析为 JSON 对象
+        data = json.loads(cleaned_raw_data)
         
         # 提取 denied-remote-domains
         denied_domains = data.get("denied-remote-domains", [])
