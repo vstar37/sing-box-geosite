@@ -124,13 +124,13 @@ def parse_special_file(link, output_directory):
     返回:
         None
     """
+    logging.info("检测到关键字特定链接！")
     try:
         response = requests.get(link)
         response.raise_for_status()  # 确保请求成功
         
         # 假设返回的数据是 JSON 格式
         data = response.json()
-        logging.info(f"返回的数据: {data}")  # 打印返回的完整数据
         
         # 提取 denied-remote-domains
         denied_domains = data.get("denied-remote-domains", [])
@@ -143,15 +143,16 @@ def parse_special_file(link, output_directory):
         os.makedirs(output_directory, exist_ok=True)
         
         # 将 denied_domains 写入 JSON 文件
-        json_output_path = os.path.join(output_directory, 'denied_domains.json')
+        json_output_path = os.path.join(output_directory, 'fabston-privacylist.json')
         
-        # 清空旧的 log.txt 内容
-        with open('log.txt', 'w') as log_file:
-            log_file.write("")  # 清空文件
-
         with open(json_output_path, 'w') as json_file:
             json.dump({"denied-remote-domains": denied_domains}, json_file, indent=4)
             logging.info(f"成功处理链接 {link} 并生成 JSON 文件 {json_output_path}")
+
+        # 生成 SRS 文件
+        srs_path = json_output_path.replace(".json", ".srs")
+        os.system(f"sing-box rule-set compile --output {srs_path} {json_output_path}")
+        logging.info(f"成功生成 SRS 文件 {srs_path}")
 
     except requests.exceptions.RequestException as e:
         logging.error(f'处理特定链接 {link} 时出错：{e}')
