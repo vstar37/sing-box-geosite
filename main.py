@@ -178,7 +178,7 @@ def parse_special_file(link, output_directory):
 def parse_list_file(link, output_directory):
     logging.info("正在解析: {}".format(link))
     try:
-        if "special_file_keyword" in link:
+        if special_file_keyword in link:
             logging.info("检测到关键字特定链接！")
             return parse_special_file(link, output_directory)
 
