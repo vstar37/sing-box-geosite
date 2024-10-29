@@ -113,6 +113,17 @@ def parse_and_convert_to_dataframe(link):
     logging.info(f"成功解析链接 {link}")
     return df, rules
 
+
+def sort_dict(obj):
+    if isinstance(obj, dict):
+        return {k: sort_dict(obj[k]) for k in sorted(obj)}
+    elif isinstance(obj, list) and all(isinstance(elem, dict) for elem in obj):
+        return sorted([sort_dict(x) for x in obj], key=lambda d: sorted(d.keys())[0])
+    elif isinstance(obj, list):
+        return sorted(sort_dict(x) for x in obj)
+    else:
+        return obj
+
 def parse_special_file(link, output_directory):
     """
     从指定链接解析特殊文件，提取 denied-remote-domains 数据，并将其写入 JSON 文件。
@@ -144,8 +155,11 @@ def parse_special_file(link, output_directory):
         # 将 denied_domains 写入 JSON 文件
         json_output_path = os.path.join(output_directory, 'fabston-privacylist.json')
         
+        # 使用 sort_dict 函数对数据进行排序
+        sorted_data = sort_dict({"denied-remote-domains": denied_domains})
+        
         with open(json_output_path, 'w') as json_file:
-            json.dump({"denied-remote-domains": denied_domains}, json_file, indent=4)
+            json.dump(sorted_data, json_file, indent=4)
             logging.info(f"成功处理链接 {link} 并生成 JSON 文件 {json_output_path}")
 
         # 生成 SRS 文件
@@ -159,16 +173,7 @@ def parse_special_file(link, output_directory):
         logging.error(f"解析 JSON 时出错，从链接 {link} 读取的内容可能不是有效的 JSON。")
     except Exception as e:
         logging.error(f"处理链接 {link} 时发生未知错误：{e}")
-
-def sort_dict(obj):
-    if isinstance(obj, dict):
-        return {k: sort_dict(obj[k]) for k in sorted(obj)}
-    elif isinstance(obj, list) and all(isinstance(elem, dict) for elem in obj):
-        return sorted([sort_dict(x) for x in obj], key=lambda d: sorted(d.keys())[0])
-    elif isinstance(obj, list):
-        return sorted(sort_dict(x) for x in obj)
-    else:
-        return obj
+        
 
 def parse_list_file(link, output_directory):
     try:
