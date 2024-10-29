@@ -130,6 +130,18 @@ def parse_special_file(link, output_directory):
         logging.error(f'处理特定链接 {link} 时出错，已跳过：{e}')
         return None
 
+# 对字典进行排序，含list of dict
+def sort_dict(obj):
+    if isinstance(obj, dict):
+        return {k: sort_dict(obj[k]) for k in sorted(obj)}
+    elif isinstance(obj, list) and all(isinstance(elem, dict) for elem in obj):
+        return sorted([sort_dict(x) for x in obj], key=lambda d: sorted(d.keys())[0])
+    elif isinstance(obj, list):
+        return sorted(sort_dict(x) for x in obj)
+    else:
+        return obj
+
+
 def parse_list_file(link, output_directory):
     try:
         if "special_file_keyword" in link:
