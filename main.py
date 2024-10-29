@@ -124,7 +124,26 @@ def sort_dict(obj):
     else:
         return obj
 
-def parse_special_file(link, output_directory):
+def clean_denied_domains(domains):
+    """
+    清洗 denied-remote-domains 列表中的域名。
+
+    参数:
+        domains (list): 待清洗的域名列表。
+
+    返回:
+        list: 清洗后的域名列表。
+    """
+    cleaned_domains = []
+    for domain in domains:
+        domain = domain.strip()  # 去除前后空格
+        if domain and domain != '":' and domain[-1] == ',':
+            domain = domain[:-1]  # 去掉末尾的逗号
+        if domain:  # 确保域名不为空
+            cleaned_domains.append(domain)
+    return cleaned_domains
+
+def parse_littlesnitch_file(link, output_directory):
     """
     从指定链接解析特殊文件，提取 denied-remote-domains 数据，并将其写入 JSON 文件。
 
@@ -145,7 +164,10 @@ def parse_special_file(link, output_directory):
         # 提取 denied-remote-domains
         denied_domains = data.get("denied-remote-domains", [])
         
-        if not denied_domains:
+        # 数据清洗
+        cleaned_denied_domains = clean_denied_domains(denied_domains)
+        
+        if not cleaned_denied_domains:
             logging.warning(f"从 {link} 未找到 'denied-remote-domains' 数据")
             return None
         
@@ -156,7 +178,7 @@ def parse_special_file(link, output_directory):
         json_output_path = os.path.join(output_directory, 'fabston-privacylist.json')
         
         # 使用 sort_dict 函数对数据进行排序
-        sorted_data = sort_dict({"denied-remote-domains": denied_domains})
+        sorted_data = sort_dict({"denied-remote-domains": cleaned_denied_domains})
         
         with open(json_output_path, 'w') as json_file:
             json.dump(sorted_data, json_file, indent=4)
@@ -180,7 +202,7 @@ def parse_list_file(link, output_directory):
     try:
         if special_file_keyword in link:
             logging.info("检测到关键字特定链接！")
-            return parse_special_file(link, output_directory)
+            return parse_littlesnitch_file(link, output_directory)
 
         with concurrent.futures.ThreadPoolExecutor() as executor:
             results = list(executor.map(parse_and_convert_to_dataframe, [link]))
