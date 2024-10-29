@@ -7,6 +7,7 @@ import requests
 import yaml
 import ipaddress
 
+special_file_keyword = "little-snitch-blocklist"  # 定义特定关键词
 # 映射字典
 MAP_DICT = {
     'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
