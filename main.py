@@ -114,33 +114,51 @@ def parse_and_convert_to_dataframe(link):
     return df, rules
 
 def parse_special_file(link, output_directory):
+    """
+    从指定链接解析特殊文件，提取 denied-remote-domains 数据，并将其写入 JSON 文件。
+
+    参数:
+        link (str): 要解析的文件链接。
+        output_directory (str): JSON 文件的输出目录。
+    
+    返回:
+        None
+    """
     try:
         response = requests.get(link)
-        response.raise_for_status()
+        response.raise_for_status()  # 确保请求成功
+        
+        # 假设返回的数据是 JSON 格式
         data = response.json()
+        logging.info(f"返回的数据: {data}")  # 打印返回的完整数据
+        
+        # 提取 denied-remote-domains
         denied_domains = data.get("denied-remote-domains", [])
         
         if not denied_domains:
             logging.warning(f"从 {link} 未找到 'denied-remote-domains' 数据")
             return None
+        
+        # 创建输出目录（如果不存在）
+        os.makedirs(output_directory, exist_ok=True)
+        
+        # 将 denied_domains 写入 JSON 文件
+        json_output_path = os.path.join(output_directory, 'denied_domains.json')
+        
+        # 清空旧的 log.txt 内容
+        with open('log.txt', 'w') as log_file:
+            log_file.write("")  # 清空文件
 
-        result_rules = {
-            "version": 1,
-            "rules": [{"domain": list(set(denied_domains))}]
-        }
+        with open(json_output_path, 'w') as json_file:
+            json.dump({"denied-remote-domains": denied_domains}, json_file, indent=4)
+            logging.info(f"成功处理链接 {link} 并生成 JSON 文件 {json_output_path}")
 
-        file_name = os.path.join(output_directory, f"{os.path.basename(link).split('.')[0]}.json")
-        with open(file_name, 'w', encoding='utf-8') as output_file:
-            json.dump(result_rules, output_file, ensure_ascii=False, indent=2)
-
-        srs_path = file_name.replace(".json", ".srs")
-        os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
-        logging.info(f"成功处理特定链接 {link}")
-        return file_name
-
-    except Exception as e:
+    except requests.exceptions.RequestException as e:
         logging.error(f'处理特定链接 {link} 时出错：{e}')
-        return None
+    except json.JSONDecodeError:
+        logging.error(f"解析 JSON 时出错，从链接 {link} 读取的内容可能不是有效的 JSON。")
+    except Exception as e:
+        logging.error(f"处理链接 {link} 时发生未知错误：{e}")
 
 def sort_dict(obj):
     if isinstance(obj, dict):
