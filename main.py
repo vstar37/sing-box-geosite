@@ -193,14 +193,20 @@ def parse_littlesnitch_file(link, output_directory):
         # 创建输出目录（如果不存在）
         os.makedirs(output_directory, exist_ok=True)
         
-        # 将 denied_domains 写入 JSON 文件
+        # 将数据格式化为指定的 JSON 格式
         json_output_path = os.path.join(output_directory, 'fabston-privacylist.json')
+        output_data = {
+            "rules": [
+                {
+                    "DOMAIN": cleaned_denied_domains
+                }
+            ],
+            "version": 1
+        }
         
-        # 使用 sort_dict 函数对数据进行排序
-        sorted_data = sort_dict({"denied-remote-domains": cleaned_denied_domains})
-        
+        # 将数据写入 JSON 文件
         with open(json_output_path, 'w') as json_file:
-            json.dump(sorted_data, json_file, indent=4)
+            json.dump(output_data, json_file, indent=4)
             logging.info(f"成功处理链接 {link} 并生成 JSON 文件 {json_output_path}")
 
         # 生成 SRS 文件
@@ -214,7 +220,6 @@ def parse_littlesnitch_file(link, output_directory):
         logging.error(f"解析 JSON 时出错，从链接 {link} 读取的内容可能不是有效的 JSON。")
     except Exception as e:
         logging.error(f"处理链接 {link} 时发生未知错误：{e}")
-        
 
 def parse_list_file(link, output_directory):
     logging.info("正在解析: {}".format(link))
