@@ -6,9 +6,13 @@ import json
 import requests
 import yaml
 import ipaddress
+import logging
 
-special_file_keyword = "https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt"  # 定义特定关键词
-# 映射字典
+# 配置日志记录
+logging.basicConfig(filename='log.txt', level=logging.ERROR, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+special_file_keyword = "https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt"
 MAP_DICT = {
     'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
     'DOMAIN-KEYWORD': 'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
@@ -23,7 +27,12 @@ def read_yaml_from_url(url):
     return yaml_data
 
 def read_list_from_url(url):
-    df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other', 'other2', 'other3'])
+    try:
+        df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other', 'other2', 'other3'])
+    except Exception as e:
+        logging.error(f"读取 {url} 时出错：{e}")
+        return pd.DataFrame(), []
+
     filtered_rows = []
     rules = []
 
@@ -60,8 +69,8 @@ def is_ipv4_or_ipv6(address):
 
 def parse_and_convert_to_dataframe(link):
     rules = []
-    if link.endswith('.yaml') or link.endswith('.txt'):
-        try:
+    try:
+        if link.endswith('.yaml') or link.endswith('.txt'):
             yaml_data = read_yaml_from_url(link)
             rows = []
             if not isinstance(yaml_data, str):
@@ -89,21 +98,13 @@ def parse_and_convert_to_dataframe(link):
                     address = address.split(',', 1)[0]
                 rows.append({'pattern': pattern.strip(), 'address': address.strip(), 'other': None})
             df = pd.DataFrame(rows, columns=['pattern', 'address', 'other'])
-        except:
+        else:
             df, rules = read_list_from_url(link)
-    else:
-        df, rules = read_list_from_url(link)
-    return df, rules
+    except Exception as e:
+        logging.error(f"解析 {link} 时出错：{e}")
+        return pd.DataFrame(), []
 
-def sort_dict(obj):
-    if isinstance(obj, dict):
-        return {k: sort_dict(obj[k]) for k in sorted(obj)}
-    elif isinstance(obj, list) and all(isinstance(elem, dict) for elem in obj):
-        return sorted([sort_dict(x) for x in obj], key=lambda d: sorted(d.keys())[0])
-    elif isinstance(obj, list):
-        return sorted(sort_dict(x) for x in obj)
-    else:
-        return obj
+    return df, rules
 
 def parse_special_file(link, output_directory):
     try:
@@ -126,7 +127,7 @@ def parse_special_file(link, output_directory):
         return file_name
 
     except Exception as e:
-        print(f'处理特定链接出错，已跳过：{link}. 错误：{e}')
+        logging.error(f'处理特定链接 {link} 时出错，已跳过：{e}')
         return None
 
 def parse_list_file(link, output_directory):
@@ -172,9 +173,9 @@ def parse_list_file(link, output_directory):
         srs_path = file_name.replace(".json", ".srs")
         os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
         return file_name
-    except:
-        print(f'获取链接出错，已跳过：{link}')
-        pass
+    except Exception as e:
+        logging.error(f'获取链接 {link} 出错，已跳过。错误：{e}')
+        return None
 
 # 读取 links.txt 并生成 JSON 文件
 with open("../links.txt", 'r') as links_file:
