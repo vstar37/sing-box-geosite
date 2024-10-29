@@ -1,148 +1,144 @@
-2024-10-29 16:27:36,389 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
-2024-10-29 16:27:36,461 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
-2024-10-29 16:27:36,461 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
-2024-10-29 16:27:36,473 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml 并生成 JSON 文件 ./WeChat.json
-2024-10-29 16:27:36,474 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml
-2024-10-29 16:27:36,541 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml
-2024-10-29 16:27:36,541 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml
-2024-10-29 16:27:36,552 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml 并生成 JSON 文件 ./MEGA.json
-2024-10-29 16:27:36,552 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
-2024-10-29 16:27:36,797 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
-2024-10-29 16:27:36,836 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
-2024-10-29 16:27:36,890 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml 并生成 JSON 文件 ./Proxy_Domain.json
-2024-10-29 16:27:36,890 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml
-2024-10-29 16:27:36,955 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml
-2024-10-29 16:27:36,956 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml
-2024-10-29 16:27:36,972 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml 并生成 JSON 文件 ./Proxy_No_Resolve.json
-2024-10-29 16:27:36,972 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
-2024-10-29 16:27:41,320 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
-2024-10-29 16:27:41,376 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
-2024-10-29 16:27:42,130 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml 并生成 JSON 文件 ./ChinaMax_Classical.json
-2024-10-29 16:27:42,132 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
-2024-10-29 16:27:43,099 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
-2024-10-29 16:27:43,284 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
-2024-10-29 16:27:43,720 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml 并生成 JSON 文件 ./ChinaIPs_IP.json
-2024-10-29 16:27:43,721 - INFO - 正在解析: https://adrules.top/adrules_domainset.txt
-2024-10-29 16:27:45,496 - INFO - 成功读取 YAML 数据 https://adrules.top/adrules_domainset.txt
-2024-10-29 16:27:46,319 - INFO - 成功解析链接 https://adrules.top/adrules_domainset.txt
-2024-10-29 16:27:47,551 - INFO - 成功处理链接 https://adrules.top/adrules_domainset.txt 并生成 JSON 文件 ./adrules_domainset.json
-2024-10-29 16:27:47,553 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-2024-10-29 16:27:47,612 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-2024-10-29 16:27:47,612 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-2024-10-29 16:27:47,625 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml 并生成 JSON 文件 ./Lan.json
-2024-10-29 16:27:47,626 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
-2024-10-29 16:27:47,685 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
-2024-10-29 16:27:47,686 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
-2024-10-29 16:27:47,696 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml 并生成 JSON 文件 ./Download.json
-2024-10-29 16:27:47,696 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
-2024-10-29 16:27:47,795 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
-2024-10-29 16:27:47,797 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
-2024-10-29 16:27:47,825 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml 并生成 JSON 文件 ./GlobalMedia_Classical.json
-2024-10-29 16:27:47,825 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
-2024-10-29 16:27:48,003 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
-2024-10-29 16:27:48,004 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
-2024-10-29 16:27:48,029 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml 并生成 JSON 文件 ./Apple_Classical.json
-2024-10-29 16:27:48,029 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
-2024-10-29 16:27:48,091 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
-2024-10-29 16:27:48,092 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
-2024-10-29 16:27:48,102 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml 并生成 JSON 文件 ./GitHub.json
-2024-10-29 16:27:48,102 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
-2024-10-29 16:27:48,196 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
-2024-10-29 16:27:48,197 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
-2024-10-29 16:27:48,215 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml 并生成 JSON 文件 ./Microsoft.json
-2024-10-29 16:27:48,215 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
-2024-10-29 16:27:48,317 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
-2024-10-29 16:27:48,318 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
-2024-10-29 16:27:48,336 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml 并生成 JSON 文件 ./Google.json
-2024-10-29 16:27:48,336 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
-2024-10-29 16:27:48,396 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
-2024-10-29 16:27:48,396 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
-2024-10-29 16:27:48,408 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml 并生成 JSON 文件 ./Telegram.json
-2024-10-29 16:27:48,408 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
-2024-10-29 16:27:48,421 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
-2024-10-29 16:27:48,421 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
-2024-10-29 16:27:48,432 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml 并生成 JSON 文件 ./Twitter.json
-2024-10-29 16:27:48,432 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
-2024-10-29 16:27:48,518 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
-2024-10-29 16:27:48,519 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
-2024-10-29 16:27:48,534 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml 并生成 JSON 文件 ./Game.json
-2024-10-29 16:27:48,534 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml
-2024-10-29 16:27:48,631 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml
-2024-10-29 16:27:48,632 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml
-2024-10-29 16:27:48,643 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml 并生成 JSON 文件 ./GameDownloadCN.json
-2024-10-29 16:27:48,643 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
-2024-10-29 16:27:48,698 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
-2024-10-29 16:27:48,698 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
-2024-10-29 16:27:48,709 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml 并生成 JSON 文件 ./SteamCN.json
-2024-10-29 16:27:48,709 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
-2024-10-29 16:27:48,809 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
-2024-10-29 16:27:48,810 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
-2024-10-29 16:27:48,821 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml 并生成 JSON 文件 ./TikTok.json
-2024-10-29 16:27:48,821 - INFO - 正在解析: https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
-2024-10-29 16:27:48,909 - INFO - 成功读取 YAML 数据 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
-2024-10-29 16:27:48,911 - INFO - 成功解析链接 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
-2024-10-29 16:27:48,922 - INFO - 成功处理链接 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml 并生成 JSON 文件 ./fakeip-filter.json
-2024-10-29 16:27:48,922 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
-2024-10-29 16:27:48,985 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
-2024-10-29 16:27:48,986 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
-2024-10-29 16:27:48,997 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml 并生成 JSON 文件 ./OpenAI.json
-2024-10-29 16:27:48,997 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
-2024-10-29 16:27:49,055 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
-2024-10-29 16:27:49,055 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
-2024-10-29 16:27:49,065 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml 并生成 JSON 文件 ./GoogleDrive.json
-2024-10-29 16:27:49,065 - INFO - 正在解析: https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml
-2024-10-29 16:27:49,077 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml
-2024-10-29 16:27:49,077 - INFO - 成功解析链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml
-2024-10-29 16:27:49,087 - INFO - 成功处理链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml 并生成 JSON 文件 ./Anaconda.json
-2024-10-29 16:27:49,087 - INFO - 正在解析: https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml
-2024-10-29 16:27:49,099 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml
-2024-10-29 16:27:49,099 - INFO - 成功解析链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml
-2024-10-29 16:27:49,109 - INFO - 成功处理链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml 并生成 JSON 文件 ./GoogleDrive.json
-2024-10-29 16:27:49,109 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
-2024-10-29 16:27:49,123 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
-2024-10-29 16:27:49,123 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
-2024-10-29 16:27:49,134 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml 并生成 JSON 文件 ./Nvidia.json
-2024-10-29 16:27:49,134 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml
-2024-10-29 16:27:49,157 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml
-2024-10-29 16:27:49,157 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml
-2024-10-29 16:27:49,168 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml 并生成 JSON 文件 ./Ubuntu.json
-2024-10-29 16:27:49,168 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml
-2024-10-29 16:27:49,193 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml
-2024-10-29 16:27:49,193 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml
-2024-10-29 16:27:49,203 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml 并生成 JSON 文件 ./Python.json
-2024-10-29 16:27:49,203 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
-2024-10-29 16:27:49,225 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
-2024-10-29 16:27:49,225 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
-2024-10-29 16:27:49,235 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml 并生成 JSON 文件 ./Twitch.json
-2024-10-29 16:27:49,235 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
-2024-10-29 16:27:49,247 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
-2024-10-29 16:27:49,248 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
-2024-10-29 16:27:49,258 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml 并生成 JSON 文件 ./AppleNews.json
-2024-10-29 16:27:49,258 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
-2024-10-29 16:27:49,383 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
-2024-10-29 16:27:49,384 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
-2024-10-29 16:27:49,394 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml 并生成 JSON 文件 ./rule-provider-direct.json
-2024-10-29 16:27:49,394 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml
-2024-10-29 16:27:49,497 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml
-2024-10-29 16:27:49,498 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml
-2024-10-29 16:27:49,510 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml 并生成 JSON 文件 ./rule-provider-proxy.json
-2024-10-29 16:27:49,510 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
-2024-10-29 16:27:49,629 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
-2024-10-29 16:27:49,630 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
-2024-10-29 16:27:49,640 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml 并生成 JSON 文件 ./rule-provider-reject.json
-2024-10-29 16:27:49,640 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
-2024-10-29 16:27:49,761 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
-2024-10-29 16:27:49,762 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
-2024-10-29 16:27:49,776 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml 并生成 JSON 文件 ./rule-provider.json
-2024-10-29 16:27:49,776 - INFO - 正在解析: https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
-2024-10-29 16:27:49,859 - INFO - 成功读取列表数据 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
-2024-10-29 16:27:49,865 - INFO - 成功解析链接 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
-2024-10-29 16:27:49,876 - INFO - 成功处理链接 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list 并生成 JSON 文件 ./anti-ip-attribution.json
-2024-10-29 16:27:49,876 - INFO - 正在解析: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
-2024-10-29 16:27:49,933 - INFO - 成功读取列表数据 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
-2024-10-29 16:27:51,658 - INFO - 成功解析链接 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
-2024-10-29 16:27:52,097 - INFO - 成功处理链接 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list 并生成 JSON 文件 ./BanEasyPrivacy.json
-2024-10-29 16:27:52,098 - INFO - 正在解析: https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt
-2024-10-29 16:27:52,098 - INFO - 检测到关键字特定链接！
-2024-10-29 16:27:52,326 - INFO - 成功处理链接 https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt 并生成 JSON 文件 ./fabston-privacylist.json
-2024-10-29 16:27:52,436 - INFO - 成功生成 SRS 文件 ./fabston-privacylist.srs
+2024-10-29 16:31:19,738 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+2024-10-29 16:31:19,767 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+2024-10-29 16:31:19,768 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+2024-10-29 16:31:19,781 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml 并生成 JSON 文件 ./WeChat.json
+2024-10-29 16:31:19,781 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml
+2024-10-29 16:31:19,806 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml
+2024-10-29 16:31:19,807 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml
+2024-10-29 16:31:19,818 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MEGA/MEGA.yaml 并生成 JSON 文件 ./MEGA.json
+2024-10-29 16:31:19,818 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
+2024-10-29 16:31:20,034 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
+2024-10-29 16:31:20,073 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
+2024-10-29 16:31:20,134 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml 并生成 JSON 文件 ./Proxy_Domain.json
+2024-10-29 16:31:20,134 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml
+2024-10-29 16:31:20,163 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml
+2024-10-29 16:31:20,163 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml
+2024-10-29 16:31:20,175 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_No_Resolve.yaml 并生成 JSON 文件 ./Proxy_No_Resolve.json
+2024-10-29 16:31:20,175 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
+2024-10-29 16:31:24,499 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
+2024-10-29 16:31:24,561 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
+2024-10-29 16:31:25,381 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml 并生成 JSON 文件 ./ChinaMax_Classical.json
+2024-10-29 16:31:25,383 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
+2024-10-29 16:31:26,366 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
+2024-10-29 16:31:26,547 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
+2024-10-29 16:31:26,993 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml 并生成 JSON 文件 ./ChinaIPs_IP.json
+2024-10-29 16:31:26,994 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+2024-10-29 16:31:27,025 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+2024-10-29 16:31:27,026 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+2024-10-29 16:31:27,038 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml 并生成 JSON 文件 ./Lan.json
+2024-10-29 16:31:27,038 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+2024-10-29 16:31:27,065 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+2024-10-29 16:31:27,065 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+2024-10-29 16:31:27,076 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml 并生成 JSON 文件 ./Download.json
+2024-10-29 16:31:27,077 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+2024-10-29 16:31:27,182 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+2024-10-29 16:31:27,184 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+2024-10-29 16:31:27,211 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml 并生成 JSON 文件 ./GlobalMedia_Classical.json
+2024-10-29 16:31:27,211 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
+2024-10-29 16:31:27,295 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
+2024-10-29 16:31:27,296 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml
+2024-10-29 16:31:27,321 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml 并生成 JSON 文件 ./Apple_Classical.json
+2024-10-29 16:31:27,321 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+2024-10-29 16:31:27,346 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+2024-10-29 16:31:27,346 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+2024-10-29 16:31:27,358 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml 并生成 JSON 文件 ./GitHub.json
+2024-10-29 16:31:27,358 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+2024-10-29 16:31:27,407 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+2024-10-29 16:31:27,408 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+2024-10-29 16:31:27,425 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml 并生成 JSON 文件 ./Microsoft.json
+2024-10-29 16:31:27,425 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+2024-10-29 16:31:27,477 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+2024-10-29 16:31:27,478 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+2024-10-29 16:31:27,495 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml 并生成 JSON 文件 ./Google.json
+2024-10-29 16:31:27,495 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+2024-10-29 16:31:27,521 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+2024-10-29 16:31:27,522 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+2024-10-29 16:31:27,533 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml 并生成 JSON 文件 ./Telegram.json
+2024-10-29 16:31:27,533 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+2024-10-29 16:31:27,560 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+2024-10-29 16:31:27,561 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+2024-10-29 16:31:27,572 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml 并生成 JSON 文件 ./Twitter.json
+2024-10-29 16:31:27,572 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+2024-10-29 16:31:27,619 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+2024-10-29 16:31:27,620 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+2024-10-29 16:31:27,636 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml 并生成 JSON 文件 ./Game.json
+2024-10-29 16:31:27,636 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml
+2024-10-29 16:31:27,660 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml
+2024-10-29 16:31:27,661 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml
+2024-10-29 16:31:27,672 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml 并生成 JSON 文件 ./GameDownloadCN.json
+2024-10-29 16:31:27,672 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
+2024-10-29 16:31:27,697 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
+2024-10-29 16:31:27,697 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
+2024-10-29 16:31:27,709 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml 并生成 JSON 文件 ./SteamCN.json
+2024-10-29 16:31:27,709 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+2024-10-29 16:31:27,736 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+2024-10-29 16:31:27,737 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+2024-10-29 16:31:27,747 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml 并生成 JSON 文件 ./TikTok.json
+2024-10-29 16:31:27,748 - INFO - 正在解析: https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
+2024-10-29 16:31:27,875 - INFO - 成功读取 YAML 数据 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
+2024-10-29 16:31:27,877 - INFO - 成功解析链接 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
+2024-10-29 16:31:27,889 - INFO - 成功处理链接 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml 并生成 JSON 文件 ./fakeip-filter.json
+2024-10-29 16:31:27,889 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+2024-10-29 16:31:27,923 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+2024-10-29 16:31:27,924 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+2024-10-29 16:31:27,935 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml 并生成 JSON 文件 ./OpenAI.json
+2024-10-29 16:31:27,935 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
+2024-10-29 16:31:27,960 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
+2024-10-29 16:31:27,961 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml
+2024-10-29 16:31:27,971 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleDrive/GoogleDrive.yaml 并生成 JSON 文件 ./GoogleDrive.json
+2024-10-29 16:31:27,971 - INFO - 正在解析: https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml
+2024-10-29 16:31:27,995 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml
+2024-10-29 16:31:27,995 - INFO - 成功解析链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml
+2024-10-29 16:31:28,007 - INFO - 成功处理链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/Anaconda.yaml 并生成 JSON 文件 ./Anaconda.json
+2024-10-29 16:31:28,007 - INFO - 正在解析: https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml
+2024-10-29 16:31:28,032 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml
+2024-10-29 16:31:28,032 - INFO - 成功解析链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml
+2024-10-29 16:31:28,044 - INFO - 成功处理链接 https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/GoogleDrive.yaml 并生成 JSON 文件 ./GoogleDrive.json
+2024-10-29 16:31:28,044 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
+2024-10-29 16:31:28,070 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
+2024-10-29 16:31:28,071 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml
+2024-10-29 16:31:28,081 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nvidia/Nvidia.yaml 并生成 JSON 文件 ./Nvidia.json
+2024-10-29 16:31:28,082 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml
+2024-10-29 16:31:28,111 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml
+2024-10-29 16:31:28,111 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml
+2024-10-29 16:31:28,123 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubuntu/Ubuntu.yaml 并生成 JSON 文件 ./Ubuntu.json
+2024-10-29 16:31:28,123 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml
+2024-10-29 16:31:28,147 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml
+2024-10-29 16:31:28,148 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml
+2024-10-29 16:31:28,158 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Python/Python.yaml 并生成 JSON 文件 ./Python.json
+2024-10-29 16:31:28,158 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+2024-10-29 16:31:28,193 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+2024-10-29 16:31:28,194 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+2024-10-29 16:31:28,205 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml 并生成 JSON 文件 ./Twitch.json
+2024-10-29 16:31:28,205 - INFO - 正在解析: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
+2024-10-29 16:31:28,230 - INFO - 成功读取 YAML 数据 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
+2024-10-29 16:31:28,231 - INFO - 成功解析链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml
+2024-10-29 16:31:28,242 - INFO - 成功处理链接 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml 并生成 JSON 文件 ./AppleNews.json
+2024-10-29 16:31:28,242 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
+2024-10-29 16:31:28,346 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
+2024-10-29 16:31:28,347 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
+2024-10-29 16:31:28,358 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml 并生成 JSON 文件 ./rule-provider-direct.json
+2024-10-29 16:31:28,358 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml
+2024-10-29 16:31:28,500 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml
+2024-10-29 16:31:28,500 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml
+2024-10-29 16:31:28,513 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-proxy.yaml 并生成 JSON 文件 ./rule-provider-proxy.json
+2024-10-29 16:31:28,513 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
+2024-10-29 16:31:28,620 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
+2024-10-29 16:31:28,620 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml
+2024-10-29 16:31:28,631 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-reject.yaml 并生成 JSON 文件 ./rule-provider-reject.json
+2024-10-29 16:31:28,631 - INFO - 正在解析: https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
+2024-10-29 16:31:28,751 - INFO - 成功读取 YAML 数据 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
+2024-10-29 16:31:28,751 - INFO - 成功解析链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml
+2024-10-29 16:31:28,764 - INFO - 成功处理链接 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider.yaml 并生成 JSON 文件 ./rule-provider.json
+2024-10-29 16:31:28,764 - INFO - 正在解析: https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
+2024-10-29 16:31:28,791 - INFO - 成功读取列表数据 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
+2024-10-29 16:31:28,796 - INFO - 成功解析链接 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list
+2024-10-29 16:31:28,808 - INFO - 成功处理链接 https://raw.githubusercontent.com/ddgksf2013/Filter/master/anti-ip-attribution.list 并生成 JSON 文件 ./anti-ip-attribution.json
+2024-10-29 16:31:28,808 - INFO - 正在解析: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+2024-10-29 16:31:28,885 - INFO - 成功读取列表数据 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+2024-10-29 16:31:30,627 - INFO - 成功解析链接 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+2024-10-29 16:31:31,065 - INFO - 成功处理链接 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list 并生成 JSON 文件 ./BanEasyPrivacy.json
+2024-10-29 16:31:31,065 - INFO - 正在解析: https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt
+2024-10-29 16:31:31,066 - INFO - 检测到关键字特定链接！
+2024-10-29 16:31:31,255 - INFO - 成功处理链接 https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt 并生成 JSON 文件 ./fabston-privacylist.json
+2024-10-29 16:31:31,368 - INFO - 成功生成 SRS 文件 ./fabston-privacylist.srs
