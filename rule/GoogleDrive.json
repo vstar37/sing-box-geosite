@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "drive.usercontent.google.com",
+        "www.googleapis.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "docs.google.com",
+        "drive.google.com",
+        "googledrive.com",
+        "googleusercontent.com",
+        "nexusmods.com"
+      ]
+    }
+  ],
+  "version": 1
+}
