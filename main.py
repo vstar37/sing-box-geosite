@@ -143,7 +143,8 @@ def clean_denied_domains(domains):
             parts = domain.split('.')
             # 判断是否为没有子域名的域名
             if len(parts) == 2:  # 例如 "0512s.com"
-                cleaned_domains["domain_suffix"].append(domain)
+                cleaned_domains["domain"].append(domain)
+                cleaned_domains["domain_suffix"].append("." + domain)  # 将带点的形式添加到 domain_suffix
             elif len(parts) > 2:  # 例如 "counter.packa2.cz"
                 cleaned_domains["domain"].append(domain)
     
