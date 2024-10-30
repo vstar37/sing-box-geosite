@@ -125,54 +125,33 @@ def sort_dict(obj):
         return obj
 
 def clean_json_data(data):
-    """
-    清洗 JSON 数据，移除末尾多余的逗号。
-
-    参数:
-        data (str): 原始 JSON 字符串。
-
-    返回:
-        str: 清洗后的 JSON 字符串。
-    """
-    # 移除末尾多余的逗号
+    """清洗 JSON 数据，移除末尾多余的逗号。"""
     cleaned_data = re.sub(r',\s*]', ']', data)  # 处理数组末尾的逗号
     cleaned_data = re.sub(r',\s*}', '}', cleaned_data)  # 处理对象末尾的逗号
     return cleaned_data
 
 def clean_denied_domains(domains):
-    """
-    清洗 denied-remote-domains 列表中的域名，并根据有无顶级域名进行分类。
-
-    参数:
-        domains (list): 待清洗的域名列表。
-
-    返回:
-        tuple: 包含 domain 和 domain_suffix 的两个列表。
-    """
-    domain_list = []
-    domain_suffix_list = []
-
+    """清洗 denied-remote-domains 列表中的域名并分类。"""
+    cleaned_domains = {
+        "domain": [],
+        "domain_suffix": []
+    }
+    
     for domain in domains:
         domain = domain.strip()  # 去除前后空格
-        if domain:
-            # 判断域名是否包含顶级域名（即是否包含 "." 后缀）
-            if re.search(r'\.[a-z]{2,}$', domain):  # 匹配类似 .com .org 等后缀
-                domain_list.append(domain)
-            else:
-                domain_suffix_list.append(domain)
-                
-    return domain_list, domain_suffix_list
+        if domain:  # 确保域名不为空
+            parts = domain.split('.')
+            # 判断是否为没有子域名的域名
+            if len(parts) == 2:  # 例如 "0512s.com"
+                cleaned_domains["domain_suffix"].append(domain)
+            elif len(parts) > 2:  # 例如 "counter.packa2.cz"
+                cleaned_domains["domain"].append(domain)
+    
+    return cleaned_domains
 
 def parse_littlesnitch_file(link, output_directory):
     """
     从指定链接解析特殊文件，提取 denied-remote-domains 数据，并将其写入 JSON 文件。
-
-    参数:
-        link (str): 要解析的文件链接。
-        output_directory (str): JSON 文件的输出目录。
-    
-    返回:
-        None
     """
     try:
         response = requests.get(link)
@@ -190,23 +169,23 @@ def parse_littlesnitch_file(link, output_directory):
         # 提取 denied-remote-domains
         denied_domains = data.get("denied-remote-domains", [])
         
-        # 数据清洗并分类
-        domain, domain_suffix = clean_denied_domains(denied_domains)
+        # 数据清洗和分类
+        cleaned_denied_domains = clean_denied_domains(denied_domains)
         
-        if not domain and not domain_suffix:
+        if not (cleaned_denied_domains["domain"] or cleaned_denied_domains["domain_suffix"]):
             logging.warning(f"从 {link} 未找到 'denied-remote-domains' 数据")
             return None
         
         # 创建输出目录（如果不存在）
         os.makedirs(output_directory, exist_ok=True)
         
-        # 构建符合指定格式的 JSON 数据
+        # 将数据格式化为指定的 JSON 格式
         json_output_path = os.path.join(output_directory, 'fabston-privacylist.json')
         output_data = {
             "rules": [
                 {
-                    "domain": domain,
-                    "domain_suffix": domain_suffix
+                    "domain": cleaned_denied_domains["domain"],
+                    "domain_suffix": cleaned_denied_domains["domain_suffix"]
                 }
             ],
             "version": 1
