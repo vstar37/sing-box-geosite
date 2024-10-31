@@ -4,6 +4,7 @@
     {
       "process_name": [
         "safari",
+        "com.apple.WebKit.Networking",
         "chrome",
         "firefox"
       ]
