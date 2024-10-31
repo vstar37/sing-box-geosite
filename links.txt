@@ -34,5 +34,5 @@ https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provide
 
 
 #========================== Filter =====================================#
-https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/geoprocess-browser.yaml
+https://raw.githubusercontent.com/vstar37/sing-box-geosite/refs/heads/main/browser-filter.json
 https://github.com/DustinWin/ruleset_geodata/releases/download/clash-ruleset/fakeip-filter.yaml
