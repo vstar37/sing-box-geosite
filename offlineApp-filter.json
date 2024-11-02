@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "process_name": [
+        "Command X",
+        "Squirrel",
+        "DevToys",
+        "DevToys Networking",
+        "Apple Juice",
+        "BLEUnlock",
+        "TextSniper",
+        "Shifty",
+        "Clop",
+        "Scroll Reverser",
+        "Ice",
+        "ProcessSpy",
+        "Find Any File"
+      ]
+    }
+  ]
+}
