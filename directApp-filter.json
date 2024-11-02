@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "process_name": [
+        "QQ",
+        "WeChat",
+        "cloudd",
+        "Music"
+      ]
+    }
+  ]
+}
