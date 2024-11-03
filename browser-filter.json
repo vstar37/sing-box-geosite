@@ -6,8 +6,10 @@
         "Safari",
         "com.apple.WebKit.Networking",
         "Chrome",
+        "chrome.exe",
         "Google Chrome Helper",
-        "Firefox"
+        "Firefox",
+        "firefox.exe"
       ]
     }
   ]
