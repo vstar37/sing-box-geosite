@@ -13,7 +13,9 @@ payload:
   - DOMAIN-SUFFIX,drive.google.com
   - DOMAIN-SUFFIX,googledrive.com
   - DOMAIN-SUFFIX,googleusercontent.com
+  
 #  - PROCESS-NAME,BackupandSync
   - DOMAIN-SUFFIX,nexusmods.com
   - DOMAIN-SUFFIX,escapefromtarkov.com
+  - DOMAIN,formulae.brew.sh
 
