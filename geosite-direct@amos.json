@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+          "www.littlecreekhosting.com", 
+          "yxvm.com", 
+          "greencloudvps.com",
+          "hellogithub.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".hellogithub.com"
+    ]
+
+    }
+  ]
+}
