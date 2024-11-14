@@ -9,7 +9,8 @@
     },
     {
       "domain_suffix": [
-        ".steamservices.net"
+        ".steamservices.net",
+        ".steamserver.net"
     ]
 
     }
