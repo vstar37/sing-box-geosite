@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain": [
-          "cmp2-hkg1.steamserver.net"
+          "cmp2-hkg1.steamserver.net",
+          "pv6check-udp.steamserver.net"
       ]
     },
     {
