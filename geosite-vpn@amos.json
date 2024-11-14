@@ -4,7 +4,7 @@
     {
       "domain": [
           "cmp2-hkg1.steamserver.net",
-          "pv6check-udp.steamserver.net"
+          "ipv6check-udp.steamserver.net"
       ]
     },
     {
