@@ -3,11 +3,19 @@
   "rules": [
     {
       "domain": [
-          "cmp2-hkg1.steamserver.net",
-          "ipv6check-udp.steamserver.net"
-      ],
+        "www.littlecreekhosting.com", 
+        "yxvm.com", 
+        "greencloudvps.com",
+        "hellogithub.com",
+        "weekly.tw93.fun"
+      ]
+    },
+    {
       "domain_suffix": [
-          ".steamserver.net"
+        ".hellogithub.com",
+        ".tw93.fun",
+        ".icloud-content.com",
+        ".mubu.com"
       ]
     }
   ]
