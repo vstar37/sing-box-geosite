@@ -6,7 +6,7 @@
           "cmp2-hkg1.steamserver.net",
           "ipv6check-udp.steamserver.net"
       ],
-      "domain_suffi": [
+      "domain_suffix": [
           ".steamserver.net"
       ]
     }
