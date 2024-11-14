@@ -3,19 +3,11 @@
   "rules": [
     {
       "domain": [
-        "www.littlecreekhosting.com", 
-        "yxvm.com", 
-        "greencloudvps.com",
-        "hellogithub.com",
-        "weekly.tw93.fun"
       ]
     },
     {
       "domain_suffix": [
-        ".hellogithub.com",
-        ".tw93.fun",
-        ".icloud-content.com",
-        ".mubu.com"
+        ".steamserver.net"
       ]
     }
   ]
