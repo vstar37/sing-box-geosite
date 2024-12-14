@@ -25,6 +25,7 @@ https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.li
 # Little Snitch Rule List
 https://raw.githubusercontent.com/fabston/little-snitch-blocklist/main/blocklist.txt
 https://raw.githubusercontent.com/Cantue35/adobe-blocklist/main/blocklist.txt
+https://raw.githubusercontent.com/leohidalgo/little-snitch---rule-groups/main/rules/hosts-unified.lsrules
 
 # Anti-IP
 https://github.com/SunsetMkt/anti-ip-attribution/raw/main/generated/rule-provider-direct.yaml
